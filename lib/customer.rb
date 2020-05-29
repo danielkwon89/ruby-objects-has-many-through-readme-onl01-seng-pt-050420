@@ -20,7 +20,7 @@ class Customer
   end
   
   def meals
-    Meal.all.map{|meal| meal.customer.name == self.name}
+    Meal.all.select{|meal| meal.customer.name == self.name}
     binding.pry
   end
 end
