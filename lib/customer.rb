@@ -18,6 +18,6 @@ class Customer
   
   
   def meals
-    
+    Meals.all
   end
 end
