@@ -18,6 +18,6 @@ class Customer
   
   
   def meals
-    Meal.all.map{|meal| meal.}
+    Meal.all.map{|meal| meal.customer == self}
   end
 end
