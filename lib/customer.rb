@@ -18,6 +18,6 @@ class Customer
   
   
   def meals
-    Meals.all
+    Meal.all.map{|meal| }
   end
 end
