@@ -23,6 +23,6 @@ class Waiter
   
   def best_tipper
     tip_array = Meal.all.map{|meal| meal.tip}
-    tip_array.max
+    find_indextip_array.max
   end
 end
