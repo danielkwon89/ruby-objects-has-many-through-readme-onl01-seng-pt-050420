@@ -21,5 +21,6 @@ class Customer
   
   def meals
     Meal.all.map{|meal| meal.customer == self}
+    binding.pry
   end
 end
